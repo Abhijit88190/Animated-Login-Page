@@ -1,0 +1,188 @@
+/* General Reset */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #007bff, #4caf50);
+    animation: color-change 6s infinite;
+}
+
+/* Background Animation */
+@keyframes color-change {
+    0% {
+        background-color: #ff0000; /* Red */
+    }
+    14% {
+        background-color: #ff7f00; /* Orange */
+    }
+    28% {
+        background-color: #ffff00; /* Yellow */
+    }
+    42% {
+        background-color: #00ff00; /* Green */
+    }
+    57% {
+        background-color: #00ffff; /* Cyan */
+    }
+    71% {
+        background-color: #0000ff; /* Blue */
+    }
+    85% {
+        background-color: #7f00ff; /* Violet */
+    }
+    100% {
+        background-color: #ff0000; /* Back to Red */
+    }
+}
+
+/* Login Container */
+.login-container {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 400px;
+    text-align: center;
+}
+
+/* Heading */
+h2 {
+    margin-bottom: 20px;
+    color: #007bff;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Input Fields */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Captcha */
+/* Captcha Section */
+#captcha-section {
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+#captcha-box {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #f7f7f7;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px auto;
+    width: fit-content;
+    display: inline-block;
+    user-select: none;
+    margin-right: 10px;
+}
+
+#captcha-input-container {
+    font-size: 16px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+#captcha-input {
+    font-size: 16px;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+    margin-right: 12px;
+}
+
+#refresh-captcha {
+    font-size: 16px;
+    background-color: #bdbbb8;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#refresh-captcha:hover {
+    background-color: #cbcaca;
+}
+
+
+/* Terms and Conditions */
+.terms {
+    font-size: 12px;
+}
+
+.terms a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Forgot Password Link */
+.forgot-password {
+    display: block;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
